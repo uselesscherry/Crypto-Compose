@@ -23,10 +23,6 @@ class CoinViewModel(
         get() = coins.value.isNotEmpty()
 
     init {
-        getCoins()
-    }
-
-    fun getCoins() {
         viewModelScope.launch(Dispatchers.IO) {
             _coins.value=repository.getCoins()
         }

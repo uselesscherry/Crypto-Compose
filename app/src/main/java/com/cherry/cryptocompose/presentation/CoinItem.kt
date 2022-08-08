@@ -13,7 +13,6 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.unit.dp
 import com.cherry.cryptocompose.domain.model.CoinDetailed
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CoinItem(
     modifier: Modifier = Modifier,
@@ -40,7 +39,7 @@ fun CoinItem(
             ) {
                 Text(
                     text = coin.name,
-                    fontSize = MaterialTheme.typography.headlineMedium.fontSize
+                    fontSize = MaterialTheme.typography.headlineSmall.fontSize
                 )
                 Column {
                     Text(text = if (coin.isActive) "is active" else "is not active")
@@ -77,7 +76,9 @@ fun CoinItem(
                             Text(text = "development status: ${coin.developmentStatus}")
                         }
                     }
-                    Text(text = coin.description)
+                    if (coin.description.isNotBlank()){
+                        Text(text = coin.description)
+                    }
                 }
 
             }

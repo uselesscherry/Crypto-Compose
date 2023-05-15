@@ -3,9 +3,6 @@
 This app executes network call to [CoinPaprika API](https://api.coinpaprika.com/) and gets info about Cryptocurrencies. The goal of the sample is to
 showcase loading data from network with `Retrofit`, implementing `DI` and async programming with `Coroutines`.
 
-### YouTube tutorial 👉🏼  <a href="https://youtu.be/IWzwG4OFfAM" target="blank"><img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/1920px-YouTube_Logo_2017.svg.png"  height="18" /></a>
-
-
 <img src="screenshots/Crypto_thumb.png"/>
 
 
